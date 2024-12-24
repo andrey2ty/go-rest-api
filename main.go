@@ -32,7 +32,7 @@ func main() {
 var db *gorm.DB
 
 func initDb() {
-	dsn := "host=localhost user=postgres password=0710 dbname=echo_project port=5432 sslmode=disable"
+	dsn := "host=localhost user=postgres password=... dbname=echo_project port=5432 sslmode=disable"
 	var err error
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
